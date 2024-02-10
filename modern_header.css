@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 56px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	gap: 0.3rem; 
+}
+
+header > i {
+	color: white;
+} 
+
+.search_btn {
+	font-size: 1.1rem;
+	margin-right: 6px;
+}
+
+.bars {
+	margin-right: auto;
+}
+
+header > a {
+	color: white;
+	text-decoration: none;
+	background-color: gray;
+	padding: 8px 10.4px;
+	border-radius: 6px;
+	font-size: 0.9rem;
+}
+
+.signup_btn {
+	background-color: hsl(23, 87%, 93%);
+	color: #b52516;
+}
+
+.login_btn {
+	background-color: transparent;
+	border: 1px solid white;
+}
+
+header > div > input{
+	display: none;
+}
+
+@media screen and (min-width: 600px){
+	header > div > input {
+		display: block;
+		background-color: #3b4045;
+		padding: 7.8px 32px;
+		width: 100%;
+		border-radius: 6px;
+		border: 1px solid hsl(210, 8%, 70%);
+
+		
+	}
+
+	header > div{
+		width: 60%;
+		position: relative;
+
+
+	}
+	header > i::placeholder{
+		color: hsl(0, 0%, 100% );	
+	}
+
+	.bars {
+		display:none;
+
+
+	}
+	.search_btn{
+		display: none;
+	}
+	header{
+		justify-content: center;
+	}
+
+header > div > i{
+	color: white;
+	position: absolute;
+	top: 0.4rem;
+	left: 0.4rem;
+	font-size: 1.2rem;
+}
+}
+
+

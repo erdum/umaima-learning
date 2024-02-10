@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.my_header {
+			width: 100%;
+			height: 80px;
+			background-color: gray;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 1rem;
+		}
+
+		.my_header > nav {
+			display: flex;
+			gap: 1rem;
+		}
+
+		.my_header > nav > a {
+			color: white;
+			text-decoration: none;
+			font-size: 1.3rem;
+		}
+
+		.my_header > nav > a:first-child {
+			transform: rotate(45deg);
+		}
+
+		.my_header > img {
+			height: 65px;
+			margin-right: auto;
+		}
+
+		.my_header > nav > i {
+			font-size: 2rem;
+			color: blue;
+			transform: rotate(45deg);
+		}
+
+		@media screen and (max-width: 480px)  {
+			.my_header > nav {
+				display: none;
+			}
+
+			.my_header > img {
+				height: 50px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="my_header">
+		<img src="logo.webp">
+		<nav>
+			<a href="">First</a>
+			<a href="">Second</a>
+			<a href="">Third</a>
+			<a href="">Fourth</a>
+			<i class="fa-solid fa-bars"></i>
+		</nav>
+	</header>
+</body>
+</html>
